@@ -63,7 +63,8 @@ class _CartTotal extends StatelessWidget {
             FlatButton(
               onPressed: () {
                 Scaffold.of(context).showSnackBar(
-                    SnackBar(content: Text('Buying not supported yet.')));
+                    SnackBar(content: Text('Payment has been received.')));
+                context.read<CartModel>().clear();
               },
               color: Colors.white,
               child: Text('BUY'),

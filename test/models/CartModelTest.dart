@@ -11,4 +11,16 @@ void main() {
       expect(cart.totalPrice, greaterThan(startingPrice));
     });
   });
+
+  test('clear all items', () {
+    final cart = CartModel();
+    cart.add(Item(1, 'Summer'));
+    cart.addListener(() {
+      expect(cart.totalPrice, 42);
+    });
+
+    cart.clear();
+    expect(cart.totalPrice, 0);
+    expect(cart.items.length, 0);
+  });
 }

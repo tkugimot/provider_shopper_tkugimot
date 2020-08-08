@@ -36,4 +36,9 @@ class CartModel extends ChangeNotifier {
     // depend on it.
     notifyListeners();
   }
+
+  void clear() {
+    _itemIds.clear();
+    notifyListeners();
+  }
 }
