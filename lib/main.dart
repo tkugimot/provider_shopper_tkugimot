@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_shopper_tkugimot/models/CartModel.dart';
 import 'package:provider_shopper_tkugimot/models/CatalogModel.dart';
+import 'package:provider_shopper_tkugimot/screens/CartScreen.dart';
 import 'package:provider_shopper_tkugimot/screens/CatalogScreen.dart';
 
 void main() {
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/catalog',
         routes: {
           '/catalog': (context) => MyCatalog(),
+          '/cart': (context) => MyCart(),
         },
       ),
     );
