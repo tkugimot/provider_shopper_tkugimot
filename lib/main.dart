@@ -5,6 +5,8 @@ import 'package:provider_shopper_tkugimot/models/CatalogModel.dart';
 import 'package:provider_shopper_tkugimot/screens/CartScreen.dart';
 import 'package:provider_shopper_tkugimot/screens/CatalogScreen.dart';
 
+import 'common/theme.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Provider Demo',
+        title: 'Test',
+        theme: appTheme,
         initialRoute: '/catalog',
         routes: {
           '/catalog': (context) => MyCatalog(),
